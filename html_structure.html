@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Web and Multimedia Design | the structure of a web page's HTML</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body>
+    <header>
+      <div class="container banner">
+        <h1>Web & Multimedia Design Tutorials</h1>
+      </div>
+    </header>
+    <div class="container page">
+
+<h1>HTML tags and elements</h1>
+
+    <p>
+      A web page (or HTML page) is made up of <strong>content</strong> - the words you write and images you link - and <strong>HTML elements</strong>.
+    </p>
+<p>
+  When a web browser loads a web page, it needs to understand what the contents of the page are and how to display them. We use HTML tags to <strong>define</strong> and <strong>differentiate</strong> our content.
+</p>
+<p>
+  For example, we might have two groups of words:
+</p>
+
+<div class="well">
+  This text should be a headline. This bit of text is the first sentence of the story.
+</div>
+
+<p>
+  Without defining - or marking these up - these with tags, there's no meaning or structure.
+</p>
+
+<p>
+  If we mark them up with HTML tags to define what they are meant to be e.g. a heading and a paragraph, we start to see some structure:
+</p>
+
+<div class="well">
+  <p>
+    <strong>&lt;h1&gt;</strong>This text should be a headline <strong>&lt;/h1&gt;</strong>
+  </p>
+  <p>
+    <strong>&lt;p&gt;</strong>This bit of text is the first sentence of the story.<strong>&lt;/p&gt;</strong>
+  </p>
+
+  <p>
+    Will display as:
+  </p>
+
+  <h1>This text should be a headline</h1>
+  <p>
+    This bit of text is the first sentence of the story.
+  </p>
+</div>
+<p>
+  It's important to distinguish between html tags and elements.
+
+</p>
+<p>
+  In the image below shows a h1 heading element. This is made up of:
+  </p>
+  <ul>
+    <li>an opening <strong>h1 tag</strong></li>
+    <li>text content</li>
+    <li>a closing <strong>h1 tag</strong></li>
+  </ul>
+<p>
+  The whole object forms an <em>HTML <strong>element</strong></em>.
+</p>
+
+<img class="img-thumbnail" src="images/html-structure.png" alt="structure of an HTML element" />
+
+
+<h1>Structure of a HTML page</h1>
+<p>
+Hover your mouse over each tag to see a description.
+</p>
+    <div class="codes">
+
+
+    <p class="doctype">
+
+    <a data-toggle="popover" data-trigger="hover" title="The Doctype" data-placement="right" data-content="The Doctype tag tells the web browser what kind of document it is. In this case it's a HTML document.">
+<span><</span>!DOCTYPE html<span>></span>
+    </a>
+</p>
+<p class="_html">
+  <a data-toggle="popover" data-trigger="hover" title="The html element " data-placement="right" data-content="The HTML tag indicates the begining of the document. All you HTML code goes inside the HTML tag.">
+<span><</span>html lang="en"<span>></span>
+  </a>
+</p>
+
+<p class="_head">
+  <a data-toggle="popover" data-trigger="hover" title="The head element" data-placement="right" data-content="The head element contains all the information about the web page, such as title, author and any linked stylesheets. You don't normally need to touch the head of a document, other than to change the title or attach a style sheet."><span><</span>head<span>></head></a>
+</p>
+
+<p class="_meta">
+  <a data-toggle="popover" data-trigger="hover" title="The meta" data-placement="right" data-content="There are many uses for meta. Meta defines information about the web page e.g. character set, author name and to control how the browser behaves on mobile screens."> <span><</span>meta charset="utf-8"<span>></span>
+
+<br>
+<span><</span>meta name="author" content="Hadrian Cawthorne"<span>></span>
+<br>
+<span><</span>meta name="viewport" content="width=device-width, initial-scale=1"<span>></span>
+  </a>
+</p>
+
+<p class="_title">
+  <a data-toggle="popover" data-trigger="hover" title="The title" data-placement="right" data-content="The title element sets the title of the whole page. This is the text that appears in the browser's tab. Don't confuse this with your article's title!">
+<span><</span>title<span>></span><span class="_content">Web and Multimedia Design | the structure of a web page's HTML</span><span><</span>/title<span>></span>
+  </a>
+</p>
+
+<p class="_link">
+  <a data-toggle="popover" data-trigger="hover" title="The link" data-placement="right" data-content="The link element is used to link to external CSS style sheet files."><span><</span>link rel="stylesheet" href="css/custom.css"<span>></span></a>
+</p>
+
+<p class="_head">
+  <a data-toggle="popover" data-trigger="hover" title="The head closing tag" data-placement="right" data-content="This tag closes the head element."><span><</span>/head<span>></span></a>
+</p>
+
+<p class="_body">
+  <a data-toggle="popover" data-trigger="hover" title="The body" data-placement="right" data-content="Body is where all your content goes. This defines the content part of your web page.">
+&lt;body&gt;
+  </a>
+</p>
+
+<p class="_header">
+  <a data-toggle="popover" data-trigger="hover" title="A level 1 header element" data-placement="right" data-content="The h1 tag defines an elemement as a level one heading."> &lt;h1&gt;<span class="_content">Here is some text that is a header</span>&lt;/h1&gt;</a>
+</p>
+
+<p class="_header">
+  <a data-toggle="popover" data-trigger="hover" title="A paragraph element" data-placement="right" data-content="The p tag defines an elemement as a paragraph.">&lt;p&gt;<span class="_content">Here's some paragraph text.</span>&lt;/p&gt;</a>
+</p>
+
+
+<p class="_body">
+  <a data-toggle="popover" data-trigger="hover" title="The body end tag" data-placement="right" data-content="This signifies the end of the body tag.">
+&lt;/body&gt;
+  </a>
+</p>
+
+
+
+<p class="_html">
+  <a data-toggle="popover" data-trigger="hover" title="The html end tag" data-placement="right" data-content="This closes off the html element.">
+<span><</span>/html<span>></span>
+  </a>
+</p>
+</div> <!-- ends codes -->
+<p class="lead centred">
+  <i class="fa fa-thumbs-up" aria-hidden="true"></i> Once you have the basic structure of your HTML file setup, you can just work between the opening and closing body tags!
+</p>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    $(function () {
+$('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+
+
+  </body>
+</html>

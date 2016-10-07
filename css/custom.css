@@ -1,0 +1,54 @@
+body {
+  background: #eee;
+}
+
+.page {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+
+}
+
+.codes {
+  background: #eee;
+  border: 1px solid #bbb;
+  padding: 1em;
+  margin: 1em 0;
+  font-family: monospace;
+}
+.codes a:link {
+
+}
+._content {
+color: tomato;
+}
+.codes a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: help;
+}
+header {
+  background: #0288D1;
+  color: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+p._head, ._header {
+  text-indent: 1em;
+}
+
+._meta, ._title, ._link  {
+  padding-left: 2em;
+}
+
+.popover {
+  text-indent: 0;
+}
+figure {
+  margin-bottom: 1em;
+}
+
+figcaption {
+  color: #555;
+}
