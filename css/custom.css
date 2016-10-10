@@ -22,7 +22,7 @@ body {
 ._content {
 color: tomato;
 }
-.codes a:hover {
+.codes a:hover, .egs a:hover {
   text-decoration: none;
   color: #000;
   cursor: help;
@@ -51,4 +51,15 @@ figure {
 
 figcaption {
   color: #555;
+}
+.date {
+
+}
+
+.authored {
+  margin-bottom: 1em;
+}
+
+.fa-thumbs-up {
+  color: limegreen;
 }
