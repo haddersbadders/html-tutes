@@ -69,3 +69,11 @@ footer {
   height: 5em;
   color: white;
 }
+.quote_box {
+    text-align: center;
+    margin: 3em auto;
+    width: 90%;
+}
+.clearfix {
+  clear: both;
+}
