@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css" media="screen" title="no title">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +43,7 @@
   When a web browser loads a web page, it needs to understand what the contents of the page are and how to display them. We use HTML tags to <strong>define</strong> and <strong>differentiate</strong> our content.
 </p>
 <p>
-  For example, we might have two groups of words:
+  For example, we might write a bt of an article:
 </p>
 
 <div class="well">
@@ -51,11 +52,19 @@
 </div>
 
 <p>
+<<<<<<< HEAD
   Without <strong>markup</strong>, those words above don't really make sense - there's no document structure or meaning, just a block of text.
 </p>
 
 <p>
   If we mark them up with HTML tags to define what they are meant to be e.g. a heading and a paragraph, we start to see some structure. Hover over the tags to see a description:
+=======
+  Without <strong>markup</strong>, the words above don't really make sense - there's no structure or meaning, just a block of text.
+</p>
+
+<p>
+  If we <strong>markup with HTML tags</strong> to define what they are meant to be e.g. a heading and a paragraph, we start to see some structure. Hover over the tags to see a description:
+>>>>>>> master
 </p>
 
 <div class="well egs">
@@ -64,6 +73,7 @@
 
   </p>
 
+<<<<<<< HEAD
   <p>
     <a data-toggle="popover" data-trigger="hover" title="div tag" data-placement="right" data-content="A div - or division - tag is used to build a generic element. It can be used when a semantic element isn't needed. Divs can also be used to group other elements together, like a box.  ">
     <strong>&lt;div&gt;</strong></a>
@@ -75,6 +85,19 @@
     <strong>&lt;h1&gt;</strong></a>American Football continues to grow in Sheffield <strong>&lt;/h1&gt;</strong>
   </p>
   <p>
+=======
+  <p>
+    <a data-toggle="popover" data-trigger="hover" title="div tag" data-placement="right" data-content="A div - or division - tag is used to build a generic element. It can be used when a semantic element isn't needed. Divs can also be used to group other elements together, like a box.  ">
+    <strong>&lt;div&gt;</strong></a>
+    Published on 06 May 2016
+    <strong>&lt;/p&gt;</strong>
+  </p>
+  <p>
+<a data-toggle="popover" data-trigger="hover" title="h1 - level 1 heading" data-placement="right" data-content="The h1 is highest level of keading. It is used to markup headings that are significant in the web page such as the site name or article title.">
+    <strong>&lt;h1&gt;</strong></a>American Football continues to grow in Sheffield <strong>&lt;/h1&gt;</strong>
+  </p>
+  <p>
+>>>>>>> master
     <strong>&lt;div&gt;</strong>
     By Thomas Hargreaves
     <strong>&lt;/div&gt;</strong>
@@ -111,25 +134,36 @@
 
 </p>
 <p>
-  In the image below shows a h1 heading element. This is made up of:
+  The image below shows a <strong>h1</strong> heading element. This is made up of:
   </p>
   <ul>
-    <li>an opening <strong>h1 tag</strong></li>
+    <li>an opening h1<strong> tag</strong></li>
     <li>text content</li>
-    <li>a closing <strong>h1 tag</strong></li>
+    <li>a closing h1<strong> tag</strong></li>
   </ul>
 <p>
-  The whole object forms an <em>HTML <strong>element</strong></em>.
+  The whole object forms an HTML <strong>element</strong>.
 </p>
 
 <img class="img-thumbnail" src="images/html-structure.png" alt="structure of an HTML element" />
 
 
-<h1>Structure of a HTML page</h1>
+<h1><img src="images/ruins-449078_1920.jpg" alt="an old wooden shack leaning over" class="img-circle  wow fadeIn" style="width: 200px;"/> Structure of a HTML page</h1>
+
+<p>
+Getting the structure of your web page right is important. Just like a building, if it's not structurally sound, weird things can start happening!
+</p>
+
+<p class="bg-success">
+  <i class="fa fa-smile-o fa-2x"></i> Luckily, most good code editors will create the basic HTL structure for you!
+</p>
+<p>
+  The example below shows a basic HTML page structure.
+</p>
 <p>
 Hover your mouse over each tag to see a description.
 </p>
-    <div class="codes">
+    <div class="codes clearfix">
 
 
     <p class="doctype">
@@ -229,7 +263,13 @@ Hover your mouse over each tag to see a description.
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js">
 
+</script>
+
+<script>
+              new WOW().init();
+              </script>
 
     <script type="text/javascript">
     $(function () {
