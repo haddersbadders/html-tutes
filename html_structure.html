@@ -32,7 +32,11 @@
 <h1>HTML tags and elements</h1>
 
     <p>
-      A web page (or HTML page) is made up of <strong>content</strong> - the words you write and images you link - and <strong>HTML elements</strong>.
+      If you break down a web page (or HTML page) into it's basic components, you'll see it's made up of:
+      <ul>
+        <li><strong>content</strong>: the words you write and images you link</li>
+        <li><strong>HTML elements</strong>: a way to to describe the content and structure of the page</li>
+      </ul>
     </p>
 <p>
   When a web browser loads a web page, it needs to understand what the contents of the page are and how to display them. We use HTML tags to <strong>define</strong> and <strong>differentiate</strong> our content.
@@ -42,34 +46,66 @@
 </p>
 
 <div class="well">
-  This text should be a headline. This bit of text is the first sentence of the story.
+  Sport Published on 06 May 2016 American Football continues to grow in Sheffield By Thomas Hargreaves After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.
+
 </div>
 
 <p>
-  Without defining - or marking these up - these with tags, there's no meaning or structure.
+  Without <strong>markup</strong>, those words above don't really make sense - there's no document structure or meaning, just a block of text.
 </p>
 
 <p>
-  If we mark them up with HTML tags to define what they are meant to be e.g. a heading and a paragraph, we start to see some structure:
+  If we mark them up with HTML tags to define what they are meant to be e.g. a heading and a paragraph, we start to see some structure. Hover over the tags to see a description:
 </p>
 
-<div class="well">
+<div class="well egs">
+  <p><a data-toggle="popover" data-trigger="hover" title="h3 - level 3 heading" data-placement="right" data-content="Headings can be classified in levels, or weights. These are from 1-6 e.g.  h1 - h6. The number signifies he importance or weight of the heading. h1 bieng the most important and h6 the least.">
+    <strong>&lt;h3&gt;</strong></a>Sport<strong>&lt;/h3&gt;</strong>
+
+  </p>
+
   <p>
-    <strong>&lt;h1&gt;</strong>This text should be a headline <strong>&lt;/h1&gt;</strong>
+    <a data-toggle="popover" data-trigger="hover" title="div tag" data-placement="right" data-content="A div - or division - tag is used to build a generic element. It can be used when a semantic element isn't needed. Divs can also be used to group other elements together, like a box.  ">
+    <strong>&lt;div&gt;</strong></a>
+    Published on 06 May 2016
+    <strong>&lt;/p&gt;</strong>
   </p>
   <p>
-    <strong>&lt;p&gt;</strong>This bit of text is the first sentence of the story.<strong>&lt;/p&gt;</strong>
+<a data-toggle="popover" data-trigger="hover" title="h1 - level 1 heading" data-placement="right" data-content="The h1 is highest level of keading. It is used to markup headings that are significant in the web page such as the site name or article title.">
+    <strong>&lt;h1&gt;</strong></a>American Football continues to grow in Sheffield <strong>&lt;/h1&gt;</strong>
+  </p>
+  <p>
+    <strong>&lt;div&gt;</strong>
+    By Thomas Hargreaves
+    <strong>&lt;/div&gt;</strong>
+  </p>
+
+  <p>
+    <a data-toggle="popover" data-trigger="hover" title="p - paragraph" data-placement="right" data-content="Simply, the p tag is used to create a paragraph. ">
+    <strong>&lt;p&gt;</strong></a>After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.<strong>&lt;/p&gt;</strong>
   </p>
 
   <p>
     Will display as:
   </p>
 
-  <h1>This text should be a headline</h1>
-  <p>
-    This bit of text is the first sentence of the story.
-  </p>
+  <div class="well">
+
+
+<h3>Sport</h3>
+<div class="date">
+  Published on 06 May 2016
 </div>
+  <h1>American Football continues to grow in Sheffield</h1>
+  <div class="authored">
+    By Thomas Hargreaves
+  </div>
+  <p>
+    After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.
+  </p>
+    </div>
+</div>
+<h3>Distinguishing tags and elements</h3>
 <p>
   It's important to distinguish between html tags and elements.
 
@@ -99,41 +135,41 @@ Hover your mouse over each tag to see a description.
     <p class="doctype">
 
     <a data-toggle="popover" data-trigger="hover" title="The Doctype" data-placement="right" data-content="The Doctype tag tells the web browser what kind of document it is. In this case it's a HTML document.">
-<span><</span>!DOCTYPE html<span>></span>
+&lt;!DOCTYPE html&gt;
     </a>
 </p>
 <p class="_html">
   <a data-toggle="popover" data-trigger="hover" title="The html element " data-placement="right" data-content="The HTML tag indicates the begining of the document. All you HTML code goes inside the HTML tag.">
-<span><</span>html lang="en"<span>></span>
+&lt;html lang="en"&gt;
   </a>
 </p>
 
 <p class="_head">
-  <a data-toggle="popover" data-trigger="hover" title="The head element" data-placement="right" data-content="The head element contains all the information about the web page, such as title, author and any linked stylesheets. You don't normally need to touch the head of a document, other than to change the title or attach a style sheet."><span><</span>head<span>></head></a>
+  <a data-toggle="popover" data-trigger="hover" title="The head element" data-placement="right" data-content="The head element contains all the information about the web page, such as title, author and any linked stylesheets. You don't normally need to touch the head of a document, other than to change the title or attach a style sheet.">&lt;head<span>></head></a>
 </p>
 
 <p class="_meta">
-  <a data-toggle="popover" data-trigger="hover" title="The meta" data-placement="right" data-content="There are many uses for meta. Meta defines information about the web page e.g. character set, author name and to control how the browser behaves on mobile screens."> <span><</span>meta charset="utf-8"<span>></span>
+  <a data-toggle="popover" data-trigger="hover" title="The meta" data-placement="right" data-content="There are many uses for meta. Meta defines information about the web page e.g. character set, author name and to control how the browser behaves on mobile screens."> &lt;meta charset="utf-8"&gt;
 
 <br>
-<span><</span>meta name="author" content="Hadrian Cawthorne"<span>></span>
+&lt;meta name="author" content="Hadrian Cawthorne"&gt;
 <br>
-<span><</span>meta name="viewport" content="width=device-width, initial-scale=1"<span>></span>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
   </a>
 </p>
 
 <p class="_title">
   <a data-toggle="popover" data-trigger="hover" title="The title" data-placement="right" data-content="The title element sets the title of the whole page. This is the text that appears in the browser's tab. Don't confuse this with your article's title!">
-<span><</span>title<span>></span><span class="_content">Web and Multimedia Design | the structure of a web page's HTML</span><span><</span>/title<span>></span>
+&lt;title&gt;<span class="_content">Web and Multimedia Design | the structure of a web page's HTML</span>&lt;/title&gt;
   </a>
 </p>
 
 <p class="_link">
-  <a data-toggle="popover" data-trigger="hover" title="The link" data-placement="right" data-content="The link element is used to link to external CSS style sheet files."><span><</span>link rel="stylesheet" href="css/custom.css"<span>></span></a>
+  <a data-toggle="popover" data-trigger="hover" title="The link" data-placement="right" data-content="The link element is used to link to external CSS style sheet files.">&lt;link rel="stylesheet" href="css/custom.css"&gt;</a>
 </p>
 
 <p class="_head">
-  <a data-toggle="popover" data-trigger="hover" title="The head closing tag" data-placement="right" data-content="This tag closes the head element."><span><</span>/head<span>></span></a>
+  <a data-toggle="popover" data-trigger="hover" title="The head closing tag" data-placement="right" data-content="This tag closes the head element.">&lt;/head&gt;</a>
 </p>
 
 <p class="_body">
@@ -161,13 +197,27 @@ Hover your mouse over each tag to see a description.
 
 <p class="_html">
   <a data-toggle="popover" data-trigger="hover" title="The html end tag" data-placement="right" data-content="This closes off the html element.">
-<span><</span>/html<span>></span>
+&lt;/html&gt;
   </a>
 </p>
 </div> <!-- ends codes -->
 <p class="lead centred">
   <i class="fa fa-thumbs-up" aria-hidden="true"></i> Once you have the basic structure of your HTML file setup, you can just work between the opening and closing body tags!
 </p>
+
+<div class="well lead">
+
+  <p>
+    &lt;body&gt;
+  </p>
+
+  <p>&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hey! Just work inside this bit...&lt;/h1&gt;
+
+  </p>
+  <p>
+    &lt;/body&gt;
+  </p>
+</div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
