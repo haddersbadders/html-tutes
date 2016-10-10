@@ -63,3 +63,9 @@ figcaption {
 .fa-thumbs-up {
   color: limegreen;
 }
+
+footer {
+  background: black;
+  height: 5em;
+  color: white;
+}
