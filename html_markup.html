@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Web and Multimedia Design | HTML Markup</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css" media="screen" title="no title">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body>
+    <header>
+      <div class="container banner">
+        <h1>Web & Multimedia Design Tutorials</h1>
+      </div>
+    </header>
+    <div class="container page">
+      <h1>HTML Markup</h1>
+
+      <p class="bg-success lead" style="padding:0.5em;">
+        HTML stands for Hyper-text <strong>Markup</strong> Language.
+      </p>
+
+          <p>
+            If you break down a web page (or HTML page) into it's basic components, you'll see it's made up of:
+            <ul>
+              <li><strong>content</strong>: the words you write and images you link</li>
+              <li><strong>HTML elements</strong>: a way to to describe the content and structure of the page</li>
+            </ul>
+          </p>
+      <p>
+        When a web browser loads a web page, it needs to understand what the contents of the page are and how to display them. We use HTML tags to <strong>define</strong> and <strong>differentiate</strong> our content.
+      </p>
+      <p>
+        For example, we might write a bt of an article:
+      </p>
+
+      <div class="well">
+        Sport Published on 06 May 2016 American Football continues to grow in Sheffield By Thomas Hargreaves After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.
+
+      </div>
+
+      <p>
+        Without <strong>markup</strong>, the words above don't really make sense - there's no structure or meaning, just a block of text.
+      </p>
+
+      <p>
+        If we use <strong>HTML markup</strong> we can define the role of each piece of content e.g. a heading or a paragraph.
+      </p>
+      <p>
+        Hover over the tags to see a description:
+      </p>
+      <div class="well egs">
+        <p><a data-toggle="popover" data-trigger="hover" title="h3 - level 3 heading" data-placement="right" data-content="Headings can be classified in levels, or weights. These are from 1-6 e.g.  h1 - h6. The number signifies he importance or weight of the heading. h1 bieng the most important and h6 the least.">
+          <strong>&lt;h3&gt;</strong></a>Sport<a data-toggle="popover" data-trigger="hover" title="h3 closing tag" data-placement="right" data-content="This closes the h3 element."><strong>&lt;/h3&gt;</strong></a>
+
+        </p>
+
+        <p>
+          <a data-toggle="popover" data-trigger="hover" title="div tag" data-placement="right" data-content="A div - or division - tag is used to build a generic element. It can be used when a semantic element isn't needed. Divs can also be used to group other elements together, like a box.  ">
+          <strong>&lt;div&gt;</strong></a>
+          Published on 06 May 2016
+        <a data-toggle="popover" data-trigger="hover" title="div closing tag" data-placement="right" data-content="This closes the div element.">  <strong>&lt;/div&gt;</strong></a>
+        </p>
+        <p>
+      <a data-toggle="popover" data-trigger="hover" title="h1 - level 1 heading" data-placement="right" data-content="The h1 is highest level of keading. It is used to markup headings that are significant in the web page such as the site name or article title.">
+          <strong>&lt;h1&gt;</strong></a>American Football continues to grow in Sheffield <a data-toggle="popover" data-trigger="hover" title="h1 closing tag" data-placement="right" data-content="This closes the h1 tag."><strong>&lt;/h1&gt;</strong></a>
+        </p>
+        <p>
+          <strong>&lt;div&gt;</strong>
+          By Thomas Hargreaves
+          <strong>&lt;/div&gt;</strong>
+        </p>
+
+        <p>
+          <a data-toggle="popover" data-trigger="hover" title="p - paragraph" data-placement="right" data-content="Simply, the p tag is used to create a paragraph. ">
+          <strong>&lt;p&gt;</strong></a>After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.<a data-toggle="popover" data-trigger="hover" title="p closing tag" data-placement="right" data-content="This is used to close the paragraph tag. "><strong>&lt;/p&gt;</strong></a>
+        </p>
+
+        <p>
+          Will display as:
+        </p>
+
+        <div class="well">
+
+
+      <h3>Sport</h3>
+      <div class="date">
+        Published on 06 May 2016
+      </div>
+        <h1>American Football continues to grow in Sheffield</h1>
+        <div class="authored">
+          By Thomas Hargreaves
+        </div>
+        <p>
+          After beating Coventry 36-18 in the first game of the Premier Division North last Sunday, the confidence in camp is good says starting QB, James Manson.
+        </p>
+          </div>
+      </div>
+
+
+    </div>
+
+    <footer>
+      <p class="text-center">
+        You've reached the footer.
+      </p>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js">
+
+</script>
+
+<script>
+              new WOW().init();
+              </script>
+
+    <script type="text/javascript">
+    $(function () {
+$('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+
+
+  </body>
+</html>
